@@ -93,7 +93,7 @@ header ul li a {
     background: #586C3D;
     color: #fff;
     border-radius: 40px;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 1px;
     text-decoration: none;
 
@@ -106,6 +106,46 @@ header ul li a {
 
 .ecohome {
     min-width: 500px;
+}
+
+.climate {
+    height: 974px;
+    background-color: #D8CC9C;
+}
+
+.graphictext h2 {
+    position: absolute;
+    color: #fff;
+    font-size: 128px;
+    font-weight: 400;
+    width: 1040px;
+    height: 138px;
+    margin-left: 152px;
+    margin-top: 123px;
+    z-index: 10;
+}
+
+.graphictext p {
+    position: absolute;
+    display: inline-block;
+    z-index: 9;
+    margin-left: 152px;
+    margin-top: 700px;
+    font-size: 26px;
+    padding: 30px 20px;
+    background-color: #D67B48;
+    color: #fff;
+    width: 500px;
+   
+
+
+
+}
+
+.graphicimage {
+    position: absolute;
+    padding-left: 558px;
+    padding-top: 207px;
 }
 
 

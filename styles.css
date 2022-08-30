@@ -1,348 +1,200 @@
-@import url('https://fonts.googleapis.com/css2?family=Iceland&family=Titillium+Web:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
+*,
+*::before,
+*::after {
+    
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
-.nav {
-    position: relative;
-    width: 100%;
-    height: 5vh;
-    padding: 60px 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #D8CC9C;
+:root {
+ --clr-background: #D8CC9C;
+ --clr-primary: #586C3D;
+ --clr-dark: #867C58;
+ --clr-light: #fff;
+ --fw-normal: 400;
+ --fw-medium: 500;
+ --fw-bold: 600;
+ --grid: 1fr;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.125rem;
+    color: var(--clr-primary);
+    line-height: 1.5;
+}
+
+.btn {
+    cursor: pointer;
+    padding: .5em 1.25em;
+    display: inline-block;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: var(--fw-normal);
+    margin-bottom: .5em;
+
+}
+
+.btn-primary {
+    background-color: var(--clr-light);
+    color: var(--clr-primary);
+    
+    
+}
+
+.btn-primary:hover {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    transition: ease .2s;
+}
+
+.btn-ghost {
+    outline: 3px solid var(--clr-light);
+    outline-offset: -3px;
+    color: var(--clr-light);
+}
+
+.btn-ghost:hover {
+    background-color: var(--clr-dark);
+    outline-color: var(--clr-dark);
+    color: var(--clr-light);
+    transition: ease .2s;
 }
 
 header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 40px;
+    background-color: var(--clr-background);
+    
+    text-align: center;
+}
+
+.logo {
+    margin-top: .6em;
+    max-width: 60px;
+}
+
+.nav-list {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-
-}
-
-header .logo {
-    position: relative;
-    max-width: 80px;
-}
-
-header ul {
-    position: relative;
-    display: flex;
-}
-
-header ul li {
+    margin: 0;
+    padding: 1em;
     list-style: none;
-}
-
-header ul li a {
-    display: inline-block;
-    color: #586C3D;
-    font-size: 22px;
-    font-weight: 600;
-    padding-left: 20px;
-    text-decoration: none;
-}
-
-.hero {
-    display: flex;
-    margin: 10px;
-    width: 100%;
-    padding: 60px 80px;
-}
-
-.hero-content {
-    display: flex;
-
-}
-
-.hero-text {
-    width: 46%;
-    padding-top: 140px;
-}
-
-.hero-text h1 {
-    font-family: 'Iceland';
-    font-size: 190px;
-    color: #586C3D;
-}
-
-.hero-text h2 {
-    font-size: 40px;
-    font-weight: 400;
-    width: 80%;
-    padding-left: 8px;
-    color: #838383;
-
-}
-
-.hero-text a {
-    display: inline-block;
-    margin-top: 40px;
-    padding: 12px 20px;
-    background: #586C3D;
-    color: #fff;
-    border-radius: 40px;
-    font-size: 24px;
-    font-weight: 400;
-    letter-spacing: 1px;
-    text-decoration: none;
-
-}
-
-.imgBox {
-    width: 54%;
-    padding-left: 20px;
+    font-size: 1.1rem;
+    font-weight: var(--fw-medium);
+    letter-spacing: .5px;
     
 }
 
-.ecohome {
-    min-width: 500px;
-}
-
-.climate {
-    height: 974px;
-    background-color: #D8CC9C;
-}
-
-.graphictext h2 {
-    position: absolute;
-    color: #fff;
-    font-size: 128px;
-    font-weight: 400;
-    width: 1040px;
-    height: 138px;
-    margin-left: 152px;
-    margin-top: 107px;
-    z-index: 10;
-}
-
-.graphictext p {
-    position: absolute;
-    display: inline-block;
-    z-index: 9;
-    margin-left: 152px;
-    margin-top: 700px;
-    font-size: 26px;
-    padding: 30px 20px;
-    background-color: #D67B48;
-    color: #fff;
-    width: 500px;
-   
-
-
-
-}
-
-.graphicimage {
-    position: absolute;
-    overflow: hidden;
-    width: 100%;
-    padding-left: 558px;
-    padding-top: 207px;
-}
-
-/* Growing 101 section */
-
-.growth {
-    height: 1685px;
-    margin-top: 302px;
-    background-color: #D8CC9C;
-}
-
-.firstplant{
-    position: absolute;
-    overflow: hidden;
-    width: 100%;
-    padding-left: 482px;
-
-}
-
-.steps h2 {
-    font-size: 140px;
-    width: 1100px;
-    font-weight: 600px;
-    margin-top: 357px;
-    margin-left: 276px;
-    color: #867c58;
-    z-index: 30;
-}
-
-.steps img {
-    padding-left: 558px;
-    float: right;
-}
-
-.indentbox p {
-    
-    
-    position: absolute;
-    display: inline-block;
-    color: #586C3D;
-    background-color: #CFC396;
-    padding: 29px 35px 16px 79px;
-    width: 405px;
-    margin-left: 210px;
-    margin-top: 120px;
-    box-shadow: inset 0px 4px 4px
-        rgba(0, 0, 0, 0.25);
-
-}
-
-.indentbox2 p {
-    position: absolute;
-    display: inline-block;
-    color: #586C3D;
-    background-color: #CFC396;
-    padding: 38px 35px 57px 79px;
-    width: 405px;
-    margin-left: 210px;
-    margin-top: 450px;
-    box-shadow: inset 0px 4px 4px
-    rgba(0, 0, 0, 0.25);
-}
-
-.indentbox3 p {
-    position: absolute;
-    display: inline-block;
-    color: #586C3D;
-    background-color: #CFC396;
-    padding: 38px 35px 57px 79px;
-    width: 405px;
-    margin-left: 210px;
-    margin-top: 875px;
-    box-shadow: inset 0px 4px 4px
-    rgba(0, 0, 0, 0.25);
-}
-
-/*top right bottom left */
-/*grid 4 photos */
-
-
-.fourphotogrid {
-    height: 1100px;
-}
-
-
-
-.floatcontainer {
-
-    z-index: 10;
-    margin: -120px auto;
-    width: fit-content;
-    height: fit-content;
-    display: grid;
-    grid-template-columns: 500px 500px;
-    grid-row: auto auto;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-
-}
-
-.box {
-    width: 500px;
-    height: 500px;
-    padding: 20px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-/* footer */
-
-footer {
-    width: 100%;
-    height: 513px;
-    background-color: #D8CC9C;
-}
-
-.footer-wrapper {
-    display: flex;
-}
-
-.paint {
-    position: absolute;
-    overflow: hidden;
-    padding-left: 123px;
-    margin-top: -23px;
+.nav-list-link {
+    text-decoration: none; 
+    color: inherit;
     
 }
 
-.footer-img {
-width:40%;
+.nav-list-link:hover {
+    color: var(--clr-light);
 }
 
-.footer-text {
-    width: 55%;
-    padding-top: 27px;
-}
-
-.footer-text h3 {
-    font-weight: 400;
-    font-size: 64px;
-    line-height: 127.5%;
-    width: 600px;
-    color:#867C58;
-}
-
-.emailinput-bar {
-    padding-top: 40px;
-}
-
-.emailCTA {
-   width: 540px;
-   height: 68px;
-   background: #CFC396;
-   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-   border: none;
-
-}
-
-.growCTA {
-    height: 68px;
+.landing {
+    padding: 3em 1em 5rem;
     
-    font-weight: 400;
-    padding: 12px 8px;
-font-size: 27px;
-    background-color: #586C3D;
-    color: #fff;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #616161;
-    padding-left: 30px;
-    font-weight: 400;
-font-size: 22px;
+@media (min-width: 500px ) {
+    .landing {
+        display: grid;
+        grid-template-columns: minmax(1em, 1fr) minmax(20rem, 20ch) minmax(1em, 3fr);
+        justify-items: start;
+    }
 
-    opacity: 1; /* Firefox */
-  }
-  
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #616161;
-    padding-left: 30px;
-    font-weight: 400;
-font-size: 22px;
-  }
-  
-  ::-ms-input-placeholder { /* Microsoft Edge */
-    color: #616161;
-    padding-left: 30px;
-    font-weight: 400;
-    font-size: 22px;
-  }
+    .landing > * { grid-column: 2 / 3; }
+
+    .hero-green {
+        background-position: left bottom;
+    }
+
+    header {
+        padding: 1em 2em;
+    }
+
+    .nav-list {
+        justify-content: end;
+        
+
+}
+.nav-list-item {
+    padding-left: 1rem;
+}
+
+.logo {
+    float: inline-start;
+    margin-top: 0;
+}
+
+}
+
+@media (min-width: 1200px) {
+    .hero-green {
+        background-position: center right;
+        
+    }
+
+    .landing {
+        padding-bottom: 9rem;
+    }
+
+    .nav-list {
+        justify-content: right;
+    }
+}
+
+.hero-green {
+    background-image: url(/images/Group\ 14.png);
+    background-size: cover;
+    
+    
+}
+
+.hero-title {
+    font-family: 'Spicy Rice', cursive;
+    color: var(--clr-light);
+    font-size: 4rem;
+    margin: 0;
+    letter-spacing: 2px;
+    
+}
+
+.hero-body {
+    padding: 0;
+    font-weight: var(--fw-bold);
+    font-size: 1.3rem;
+    color: var(--clr-light);
+    /* max-width: 250px; */
+}
+
+/* End of Header/landing section */ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

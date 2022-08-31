@@ -13,6 +13,7 @@
  --clr-primary: #586C3D;
  --clr-dark: #867C58;
  --clr-light: #fff;
+ --clr-graphic: #D67B48;
  --fw-normal: 400;
  --fw-medium: 500;
  --fw-bold: 600;
@@ -158,17 +159,40 @@ header {
         justify-content: end;
         
 
-}
-.nav-list-item {
+    }
+    .nav-list-item {
     padding-left: 1rem;
-}
+    }
 
-.logo {
+    .logo {
     float: inline-start;
     margin-top: 0;
-}
+    }
+
+ .climate {
+    display: grid;
+        grid-template-columns: minmax(1em, 1fr) minmax(30ch, 1em) minmax(1em, 3fr);
+        justify-items: start;
+ }
+
+.climate > * { grid-column: 2 / 3; } 
+
+
+    .graphhic {
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+
+    }
+
+    .reverse {
+    font-size: 2.9rem;
+ 
+
+    }
 
 }
+
 
 @media (min-width: 1200px) {
     .hero-green {
@@ -188,31 +212,104 @@ header {
 /* End of Header/landing section */ 
 
 .climate {
-    padding: 2em 1em 5rem;
+    padding: 3em 1em 4rem;
+
 }
+
+.disaster-graphic {
+    background-color: var(--clr-background);
+}
+
 
 .reverse {
     font-size: 2.5rem;
     font-weight: var(--fw-normal);
     color: var(--clr-light);
-    z-index: 10;
-}
-
-.disaster-graphic {
-    background-color: var(--clr-background);
-} 
-
-
-.graphic-image {
-    z-index: 1;
-    margin: -150px 0 0 205px;
-    padding: 0;
-}
-
-.greenroof {
-    max-width: 600px;
+    position: relative;
+    padding-bottom: 3rem;
+    z-index: 2;
+    
     
 }
+
+.orange {
+    display: block;
+    padding: 1.5rem;
+    background-color: var(--clr-graphic);
+    color: var(--clr-light);
+    width: 80%;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+    
+}
+
+.graphhic {
+    margin: -290px 0 0 120px;
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+}
+
+.planty {
+    
+   width: 400px;
+    
+
+}
+
+
+/* steps section */
+
+.growth {
+    margin-top: 30px;
+    background-color: var(--clr-background);
+    
+}
+
+/* .growing {
+
+}  */
+
+.grid-span-2 {
+    grid-column: span 2;
+}
+
+.step-grid {
+    display: grid;
+    gap: .3rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    padding: 2em;
+}
+
+.indentbox {
+    padding: 2rem;
+    display: block;
+    background-color: #CFC396;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.indentboximg:nth-child(2) {
+    grid-row: span 3;
+}
+
+
+
+.blossom {
+    width: 90%;
+    height: 100%;
+}
+
+@media (max-width: 600px ) {
+
+
+    .indentbox:nth-child(2) {
+        display: none;
+    }
+
+}
+
 
 
 

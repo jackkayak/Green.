@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&display=swap');
 *,
 *::before,
 *::after {
@@ -122,7 +122,8 @@ header {
 }
 
 .hero-title {
-    font-family: 'Spicy Rice', cursive;
+    font-family: 'Orbitron', sans-serif;
+    /* font-family: 'Spicy Rice', cursive; */
     color: var(--clr-light);
     font-size: 4rem;
     margin: 0;

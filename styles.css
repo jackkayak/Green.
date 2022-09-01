@@ -165,7 +165,7 @@ header {
     }
 
     .logo {
-        float: inline-start;
+        float: left;
         margin-top: 0;
         }
 
@@ -208,10 +208,6 @@ header {
         justify-content: right;
     }
 
-    .logo {
-        float: inline-start;
-        margin-top: 0;
-        }
 }
 
 /* End of Header/landing section */ 
